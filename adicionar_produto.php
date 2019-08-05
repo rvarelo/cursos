@@ -37,10 +37,26 @@
 			<div class="form-group" > 
 			   <label>Categoria</label>
 			   <select class="form-control" name="categoria">
-			      <option>Perifericos</option>
-			      <option>Hardware</option>
-			      <option>Software</option>
-			      <option>Celulares</option>
+			      
+			   	<?php 
+
+			   		include 'conexao.php';
+
+	
+					$sqlcat = "SELECT * FROM `categoria`";
+					$buscarcat = mysqli_query($conexao,$sqlcat);
+
+					while ($arraycat = mysqli_fetch_array($buscarcat)) {
+
+					$id_categoria = $arraycat['id_categoria'];
+					$nome_categoria = $arraycat['nome_categoria'];
+
+				?>		
+
+			    	<option><?php  echo $nome_categoria ?></option>
+
+				<?php } ?>
+
 			   </select>
 			</div>
 			<div class="form-group">
@@ -50,10 +66,27 @@
 			<div class="form-group">
 			   <label>Fornecedor</label>
 			   <select class="form-control" name="fornecedor">
-			      <option>Fornecedor A</option>
-			      <option>Fornecedor B</option>
-			      <option>Fornecedor C</option>
-			      <option>Fornecedor D</option>
+			      
+			     <?php 
+
+			   		include 'conexao.php';
+
+	
+					$sqlfor = "SELECT * FROM `fornecedor`";
+					$buscarfor = mysqli_query($conexao,$sqlfor);
+
+					while ($arrayfor = mysqli_fetch_array($buscarfor)) {
+
+					$id_fornecedor = $arrayfor['id_categoria'];
+					$nome_fornecedor = $arrayfor['nome_fornecedor'];
+
+				?>		
+
+			      <option><?php echo $nome_fornecedor ?></option>
+
+			      <<?php } ?>
+
+
 			   </select>
 			</div>
             <div style="text-align: right;">                

@@ -29,17 +29,48 @@
 	    </div>
 	  </div>
 
-	  <div class="col-sm-6" style="margin-top: 10px">
-			<div class="card">
-				<div class="card-body">
-			        <h5 class="card-title">Adicionar Categorias</h5>
-			        <p class="card-text">Opção para adicionar categorias</p>
-			        <a href="adicionar_categoria.php" class="btn btn-primary">Cadastrar Categorias</a>
-			    </div>
-			</div>
-		</div>
-	  </div>  
-	</div>
+	  
+	  <div class="col-sm-6" style="margin-top: 20px">
+	  	<div class="card">
+	    	<div class="card-body">
+	        	<h5 class="card-title">Adicionar Categorias</h5>
+	        	<p class="card-text">Opção para adicionar adicionar Categorias</p>
+	        	<a href="adicionar_categoria.php" class="btn btn-primary">Cadastrar Categorias</a>
+	    	</div>
+	  	</div>
+	  </div>
+
+	  <div class="col-sm-6" style="margin-top: 20px">
+	  	<div class="card">
+	    	<div class="card-body">
+	        	<h5 class="card-title">Lista de Categorias</h5>
+	        	<p class="card-text">Visualizar, editar e excluir as Categorias</p>
+	        	<a href="listar_categorias.php" class="btn btn-primary">Categorias</a>
+	      	</div>
+	    </div>
+	  </div>
+
+	  <div class="col-sm-6" style="margin-top: 20px">
+	  	<div class="card">
+	    	<div class="card-body">
+	        	<h5 class="card-title">Adicionar Fornecedores</h5>
+	        	<p class="card-text">Opção para adicionar adicionar Fornecedores</p>
+	        	<a href="adicionar_fornecedor.php" class="btn btn-primary">Cadastrar Fornecedorres</a>
+	    	</div>
+	  	</div>
+	  </div>
+
+	  <div class="col-sm-6" style="margin-top: 20px">
+	  	<div class="card">
+	    	<div class="card-body">
+	        	<h5 class="card-title">Lista de Fornecedores</h5>
+	        	<p class="card-text">Opção para adicionar adicionar Fornecedores</p>
+	        	<a href="listar_fornecedor.php" class="btn btn-primary">Fornecedores</a>
+	      	</div>
+	    </div>
+	  </div>
+
+	  
 </div>
 
 
