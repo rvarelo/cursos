@@ -1,61 +1,61 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<title>Meu primeiro Script</Title>
-		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <style type="text/css">
-        #tamanhoContainer{
-            width: 500px;
-        }
-        #Botao{
-           background-color: #31B433; /*fundo*/
-           border: #9EE010;
-           color: #ffffff; /*letra*/
-        }
-    </style>    
-
+	<title>Menu</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 <body>
 
-	<div class="container" id="tamanhoContainer" style="margin-top: 40px">
-		<h4>Fomulario de Cadastro</h4>
-        <form action="_inserir_produto.php" method="post" style="margin-top: 20px">
-			<div class="form-group">
-			    <label>Nro Produto</label>
-			    <input type="number" class="form-control" name="nroproduto" placeholder="Insira o numero do Produto">
+
+<div class="container" style="margin-top: 100px">
+	<div class="row">
+	  <div class="col-sm-6">
+	    <div class="card">
+	      <div class="card-body">
+	        <h5 class="card-title">Adicionar Produtos</h5>
+	        <p class="card-text">Opção para adicionar produtos em nosso estoque</p>
+	        <a href="adicionar_produto.php" class="btn btn-primary">Cadastrar Produto</a>
+	      </div>
+	    </div>
+	  </div>
+
+	  <div class="col-sm-6">
+	    <div class="card">
+	      <div class="card-body">
+	        <h5 class="card-title">Lista de Produtos</h5>
+	        <p class="card-text">Visualizar, editar e excluir os produtos</p>
+	        <a href="listar_produtos.php" class="btn btn-primary">Produtos</a>
+	      </div>
+	    </div>
+	  </div>
+
+	  <div class="col-sm-6" style="margin-top: 10px">
+			<div class="card">
+				<div class="card-body">
+			        <h5 class="card-title">Adicionar Categorias</h5>
+			        <p class="card-text">Opção para adicionar categorias</p>
+			        <a href="adicionar_categoria.php" class="btn btn-primary">Cadastrar Categorias</a>
+			    </div>
 			</div>
-			<div class="form-group">
-			    <label>Nome Produto</label>
-			    <input type="text" class="form-control" name="nomeproduto" placeholder="Insira o nome do Produto">
-			</div>
-			<div class="form-group" > 
-			   <label>Categoria</label>
-			   <select class="form-control" name="categoria">
-			      <option>Perifericos</option>
-			      <option>Hardware</option>
-			      <option>Software</option>
-			      <option>Celulares</option>
-			   </select>
-			</div>
-			<div class="form-group">
-			    <label>Quantidade</label>
-			    <input type="number" class="form-control" name="quantidade" placeholder="Insira a Quantidade do Produto">
-			</div>
-			<div class="form-group">
-			   <label>Fornecedor</label>
-			   <select class="form-control" name="fornecedor">
-			      <option>Fornecedor A</option>
-			      <option>Fornecedor B</option>
-			      <option>Fornecedor C</option>
-			      <option>Fornecedor D</option>
-			   </select>
-			</div>
-            <div style="text-align: right;">                
-                <button type="submit" id="Botao" class="btn btn-success btn-sm">Cadastrar</button>
-            </div>
-		</form>
+		</div>
+	  </div>  
 	</div>
+</div>
+
+
+
+
+	
+
+
+</div>
+
+
+
+
+
+
+
 
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
