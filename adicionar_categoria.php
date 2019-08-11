@@ -22,7 +22,7 @@
 <div class="container"id="tamanhoContainer" style="margin-top: 40px">
 	
 	<div style="text-align: right;">
-			<a href="index.php" role='button' class="btn btn-sm btn-primary">Voltar</a>
+			<a href="index1.php" role='button' class="btn btn-sm btn-primary">Voltar</a>
 	</div>
 
 	<h4>Cadastro de Categoria</h4>

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Listagem de Produtos</title>
+	<title>Listagem de Fornecedor</title>
 	<!-- bootstrap -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<!-- fontawesome -->
@@ -9,7 +9,7 @@
 </head>
 <body>
 
-<div class="container" style="width: 900px;margin-top: 40px">
+<div class="container" style="width: 500px;margin-top: 40px">
 
 
 	<div style="text-align: right;">
@@ -17,40 +17,28 @@
 	</div>
 
 
-	<h3>Lista de Produtos</h3>	
+	<h3>Lista de Fornecedores</h3>	
 <br>
 <table class="table">
   <thead>
     <tr>
-      <th scope="col">Nro Produto</th>
-      <th scope="col">Nome Prdduto</th>
-      <th scope="col">Categoria</th>
-      <th scope="col">Quantidade</th>
-      <th scope="col">Fornecedor</th>
+      <th scope="col">Nome Fornecedor</th>
       <th scope="col">Ação</th>
     </tr>
   </thead>          
     	<?php 
 			include 'conexao.php';
-			$sql = "SELECT * FROM `estoque`";
+			$sql = "SELECT * FROM `fornecedor`";
 			$busca = mysqli_query($conexao,$sql);
 
 			while ($array = mysqli_fetch_array($busca)) {
-				$id_estoque = $array['id_estoque'];
-				$nroproduto = $array['nroproduto'];
-				$nomeproduto = $array['nomeproduto'];
-				$categoria = $array['categoria'];
-				$quantidade = $array['quantidade'];
-				$fornecedor = $array['fornecedor'];		
+				$id_fornecedor = $array['id_fornecedor'];
+				$nome_fornecedor = $array['nome_fornecedor'];				
  		?>
- 	<tr>
-    	<td><?php echo $nroproduto  ?></td>
-    	<td><?php echo $nomeproduto  ?></td>
-    	<td><?php echo $categoria  ?></td>
-    	<td><?php echo $quantidade  ?></td>
-    	<td><?php echo $fornecedor  ?></td>
-    	<td><a class="btn btn-sm btn-warning" style="color:#fff" href="editar_produto.php?id=<?php echo $id_estoque ?>"  role="button"><i class="far fa-edit"></i>&nbsp;Editar</a>
-		<a class="btn btn-sm btn-danger" style="color:#fff" href="deletar_produto.php?id=<?php echo $id_estoque ?>"  role="button"><i 	class="far fa-trash-alt"></i>&nbsp;Excluir</a></td>
+ 	<tr>    	
+    	<td><?php echo $nome_fornecedor  ?></td>    	
+    	<td><a class="btn btn-sm btn-warning" style="color:#fff" href="editar_fornecedor.php?id=<?php echo $id_fornecedor?>"  role="button"><i class="far fa-edit"></i>&nbsp;Editar</a>
+		<a class="btn btn-sm btn-danger" style="color:#fff" href="deletar_fornecedor.php?id=<?php echo $id_fornecedor?>"  role="button"><i 	class="far fa-trash-alt"></i>&nbsp;Excluir</a></td>
 
 		<?php } ?>
 

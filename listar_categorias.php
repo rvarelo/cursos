@@ -9,11 +9,11 @@
 </head>
 <body>
 
-<div class="container" style="width: 900px;margin-top: 40px">
+<div class="container" style="width: 500px;margin-top: 40px">
 
 
 	<div style="text-align: right;">
-		<a href="index.php" role='button' class="btn btn-sm btn-primary">Voltar</a>
+		<a href="index1.php" role='button' class="btn btn-sm btn-primary">Voltar</a>
 	</div>
 
 
@@ -28,7 +28,7 @@
   </thead>          
     	<?php 
 			include 'conexao.php';
-			$sql = "SELECT * FROM `Categoria`";
+			$sql = "SELECT * FROM `categoria`";
 			$busca = mysqli_query($conexao,$sql);
 
 			while ($array = mysqli_fetch_array($busca)) {
@@ -37,8 +37,8 @@
  		?>
  	<tr>    	
     	<td><?php echo $nome_categoria  ?></td>    	
-    	<td><a class="btn btn-sm btn-warning" style="color:#fff" href="editar_produto.php?id=<?php echo $id_estoque ?>"  role="button"><i class="far fa-edit"></i>&nbsp;Editar</a>
-		<a class="btn btn-sm btn-danger" style="color:#fff" href="deletar_produto.php?id=<?php echo $id_estoque ?>"  role="button"><i 	class="far fa-trash-alt"></i>&nbsp;Excluir</a></td>
+    	<td><a class="btn btn-sm btn-warning" style="color:#fff" href="editar_categoria.php?id=<?php echo $id_categoria ?>"  role="button"><i class="far fa-edit"></i>&nbsp;Editar</a>
+		<a class="btn btn-sm btn-danger" style="color:#fff" href="deletar_categoria.php?id=<?php echo $id_categoria ?>"  role="button"><i 	class="far fa-trash-alt"></i>&nbsp;Excluir</a></td>
 
 		<?php } ?>
 
